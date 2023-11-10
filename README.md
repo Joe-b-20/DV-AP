@@ -103,3 +103,79 @@ Collaboration: Code reviews and pull requests for team collaboration.
 
 
 ![image](https://github.com/Joe-b-20/DV-AP/assets/109188506/51026707-9da3-41f3-99a0-34608d5c432b)
+
+Flowchart for Project Development
+1. Frontend Development
+1.1. Design User Interface (UI)
+
+Sketch initial design layouts for main screens.
+Focus on data upload, visualization, and analysis interfaces.
+1.2. Implement UI in React
+
+Set up React components for each part of the UI.
+Implement routing and navigation.
+1.3. Integrate User Authentication
+
+Use AWS Cognito for user authentication and authorization.
+2. Backend Development
+2.1. Set Up Python Backend
+
+Configure Python environment for API development.
+2.2. Develop RESTful APIs
+
+Create APIs for data upload, processing, and retrieval.
+2.3. Data Processing Logic
+
+Implement algorithms for data analysis and processing.
+3. AWS Services Integration
+3.1. Configure AWS S3
+
+Set up buckets for data storage.
+3.2. Set Up AWS Lambda
+
+Implement Lambda functions for serverless computing tasks.
+3.3. AWS Networking and Security
+
+Configure VPCs, Security Groups, and API Gateway.
+4. Dockerization
+4.1. Create Docker Containers
+
+Write Dockerfiles for both frontend and backend.
+Build and test Docker containers locally.
+5. Testing
+5.1. Write Test Cases
+
+Develop test cases for both frontend and backend functionalities.
+5.2. Execute Tests
+
+Perform functional, UI/UX, and security testing.
+Use AWS tools for performance testing.
+6. Deployment
+6.1. Deploy on AWS ECS
+
+Deploy Docker containers on AWS ECS.
+Ensure integration of all services.
+7. Documentation and Training
+7.1. Finalize Documentation
+
+Complete the documentation covering all aspects of the platform.
+7.2. Create User Guides or Tutorials
+
+Develop easy-to-follow tutorials for end-users.
+8. Final Review and Launch
+8.1. Review Entire Project
+
+Conduct a final review of the entire platform.
+Ensure all components are functioning as expected.
+8.2. Launch the Platform
+
+Officially launch the platform.
+Monitor for any immediate issues.
+9. Post-Launch Activities
+9.1. Gather User Feedback
+
+Collect and analyze user feedback for future improvements.
+9.2. Plan for Updates and Maintenance
+
+Schedule regular updates and maintenance activities.
+![image](https://github.com/Joe-b-20/DV-AP/assets/109188506/d637234f-775c-41c0-8621-06001b108f3d)
