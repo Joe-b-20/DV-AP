@@ -8,13 +8,12 @@ import Header from './components/Header';
 import MainArea from './components/MainArea';
 import Sidebar from './components/Sidebar';
 import Footer from './components/Footer';
-import DataUploadInterface from './components/data-upload';
 
-const App = () => {
+
+const App: React.FC = () => {
   return (
     <div className="App">
       <Header />
-        <DataUploadInterface />
       <div className="content">
         <Sidebar />
         <MainArea />

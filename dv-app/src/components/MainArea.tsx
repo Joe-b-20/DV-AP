@@ -4,7 +4,7 @@
 
 import React from 'react';
 
-const MainArea = () => {
+const MainArea: React.FC = () => {
   return (
     <main>
       <h1>Welcome to the Data Visualization and Analysis Platform</h1>

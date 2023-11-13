@@ -7,26 +7,6 @@ Main area with an overview of recent activities or quick access to key features.
 Sidebar or menu for additional navigation options.
 Footer with contact information and legal links. */
 
-import React from 'react';
-
-const Header = () => {
-    return (
-      <header>
-        <div className="logo">Your Logo Here</div>
-        <nav>
-          <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/upload">Upload</a></li>
-            <li><a href="/visualization">Visualization</a></li>
-            <li><a href="/analysis">Analysis</a></li>
-            <li><a href="/settings">Settings</a></li>
-          </ul>
-        </nav>
-      </header>
-    );
-  }
-  return
-
 
 
 

@@ -4,7 +4,7 @@
 
 import React from 'react';
 
-const Footer = () => {
+const Footer: React.FC = () => {
   return (
     <footer>
       <p>Contact information: [Your Contact Info Here]</p>

@@ -4,7 +4,7 @@
 
 import React from 'react';
 
-const Sidebar = () => {
+const Sidebar: React.FC = () => {
   return (
     <aside>
       <h3>Navigation</h3>
