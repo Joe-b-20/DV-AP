@@ -1,0 +1,30 @@
+header, footer {
+  background-color: #817f7f;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 1rem;
+}
+
+aside {
+  background-color: #f4f4f4;
+  padding: 1rem;
+}
+
+.content {
+  display: flex;
+}
+
+main {
+  flex: 1;
+  padding: 1rem;
+}
