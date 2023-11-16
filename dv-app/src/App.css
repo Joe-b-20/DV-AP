@@ -1,6 +1,6 @@
 header, footer {
-  background-color: #817f7f;
-  color: white;
+  background-color: #acd5f8;
+  color: rgb(12, 0, 0);
   text-align: center;
   padding: 1rem;
 }
@@ -16,8 +16,9 @@ nav ul li {
 }
 
 aside {
-  background-color: #f4f4f4;
+  background-color: #a6deec;
   padding: 1rem;
+  width: 250px;
 }
 
 .content {
@@ -27,4 +28,20 @@ aside {
 main {
   flex: 1;
   padding: 1rem;
+  background-color: #ffffff;
+  margin-left: 250px;
+}
+
+button {
+  background-color: #ec6f61;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #c0392b;
 }

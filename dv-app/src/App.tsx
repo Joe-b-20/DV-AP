@@ -22,17 +22,19 @@ const App: React.FC = () => {
       {({ signOut, user }) => (
         <Router>
           <div className="App">
-            <Header />
+            <Header user={user}/>
             <button onClick={signOut} style={{ position: 'absolute', top: 20, right: 20 }}>
               Sign Out
             </button>
             <div className="content">
               <Sidebar />
+            <main>
               <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/dashboard" element={<Dashboard />} />
                 {/* Add more routes as needed */}
               </Routes>
+              </main>
             </div>
             <Footer />
           </div>

@@ -8,7 +8,8 @@ import DataVisualizationInterface from './Visualization'
 import DataAnalysisInterface from './Analysis';
 import SettingsInterface from './Settings';
 
-const Header: React.FC = () => {
+
+const Header: React.FC<{user?: any}>  = ({user}) => {
   const [isUploadOpen, setIsUploadOpen] = useState(false);
   const [isVisualizationOpen, setIsVisualizationOpen] = useState(false);
   const [isAnalysisOpen, setIsAnalysisOpen] = useState(false);
@@ -32,6 +33,14 @@ const Header: React.FC = () => {
   return (
     <header>
       <div className="logo">Your Logo Here</div>
+       {/* Display user information if available */}
+       <div className="user-info">
+        {user ? (
+          <p>Welcome, {user.username}</p> // Adjust according to the user object structure
+        ) : (
+          <p>Welcome, Guest</p>
+        )}
+      </div>
       <nav>
         <ul>
           <li><a href="/">Home</a></li>
