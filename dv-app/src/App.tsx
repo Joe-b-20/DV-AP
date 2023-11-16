@@ -1,16 +1,12 @@
 // Project front-end 
 // 1. Home/Dashboard Screen
 // App
-// Need to create a new user pool in AWS Cognito with the following attributes:
-// Username and password only
-// Also need to iron out routing issues and some final styling
 
 import './App.css';
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import { Amplify, Auth } from 'aws-amplify';
+import { Amplify } from 'aws-amplify';
 import { Authenticator } from '@aws-amplify/ui-react';
-import { PhoneNumberField } from '@aws-amplify/ui-react';
 import '@aws-amplify/ui-react/styles.css';
 import Header from './components/Header';
 import Sidebar from './components/Sidebar';
