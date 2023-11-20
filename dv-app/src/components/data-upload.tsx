@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import axios from 'axios';
+
 
 const DataUploadInterface = () => {
   const [selectedFile, setSelectedFile] = useState<File | null>(null);
@@ -27,13 +29,32 @@ const DataUploadInterface = () => {
     // Example: Upload file logic goes here
     // Use API calls to upload the file and update progress
     // For demo, we'll just simulate an upload progress
+    const formadata = new FormData();
+    formadata.append('file', selectedFile);
 
-    setUploadStatus('Uploading...');
-    for (let progress = 0; progress <= 100; progress += 10) {
-      setUploadProgress(progress);
-      await new Promise(resolve => setTimeout(resolve, 100)); // Simulate upload time
+    try {
+      setUploadStatus('Uploading...');
+      const response = await axios({
+        method: 'post',
+        url: '/upload',
+        data: formadata,
+        onUploadProgress: (progressEvent) => {
+          if (progressEvent.total) {
+            const percentCompleted = Math.round((progressEvent.loaded * 100) / progressEvent.total);
+            setUploadProgress(percentCompleted);
+          }
+        },
+      });
+
+      if (response.status === 200) {
+        setUploadStatus('Upload successful!');
+      } else {
+        setUploadStatus('Upload failed.');
+      }
+    } catch (error) {
+      setUploadStatus('Upload failed.');
+      console.error('Upload error:', error);
     }
-    setUploadStatus('Upload successful!');
   };
 
   return (
@@ -58,3 +79,4 @@ const DataUploadInterface = () => {
 };
 
 export default DataUploadInterface;
+
